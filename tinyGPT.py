@@ -1,6 +1,3 @@
-Here's the organized code with added comments and sections for clarity:
-
-```python
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
@@ -207,6 +204,3 @@ for iter in range(max_iters):
 # Generate from the model
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 print(decode(m.generate(context, max_new_tokens=500)[0].tolist()))
-```
-
-This should help in understanding the code structure and organization better.
